@@ -2,7 +2,7 @@
     <div>
         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="/logo1.PNG"></a>
+                <router-link class="navbar-brand" to="/"><img src="/logo1.PNG"></router-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -17,7 +17,7 @@
                     </ul>
                 </div>
             </div>
-            </nav>
+        </nav>
 
             <!--- Image Slider -->
             <div id="slides" class="carousel slide" data-ride="carousel">
@@ -32,7 +32,6 @@
                     <div class="carousel-caption">
                         <h1 class="display-2">Osteoporosis</h1>
                         <h3>Detection and Prediction</h3>
-                            <router-link class="btn btn-outline-light btn-lg">Check</router-link>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -57,17 +56,17 @@
 
             <!--- Connect -->
             <div class="container-fluid padding">
-            <div class="row text-center padding">
-                <div class="col-12">
-                    <h2>Connect</h2>
+                <div class="row text-center padding">
+	                <div class="col-12">
+		                <h2><i>"WE WANT TO PROMOTE BETTER BONE HEALTH TO ALL AGES!"</i></h2>
+	                </div>
+	            <div class="col-12 social padding">
+		            <a href="#"><i class="fab fa-facebook"></i></a>
+		            <a href="#"><i class="fab fa-twitter"></i></a>
+		            <a href="#"><i class="fab fa-instagram"></i></a>
+		            <a href="#"><i class="fab fa-youtube"></i></a>
+	            </div>
                 </div>
-                <div class="col-12 social padding">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
             </div>
 
             <!--- Footer -->
@@ -81,7 +80,6 @@
                     </div> 
                 </div>
             </footer>
-
     </div>
 </template>
 

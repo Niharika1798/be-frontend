@@ -131,11 +131,15 @@ export default {
       this.hasOsteo = true;
       this.message.title = "You have Osteoporosis!";
       this.message.content =
-        "According to the data entered by you, the system has predicted that you have osteoporosis. Although you can’t completely reverse osteoporosis, there are ways to manage it. Some of those methods are things you can do every day through diet and exercise.";
+        "According to the data entered by you, the system has predicted that you have osteoporosis. Although you can’t completely reverse osteoporosis, there are ways to manage it. Some of those methods are things you can do every day through diet and exercise. Chance: " +
+        percentage * 100 +
+        "%";
     } else {
       this.message.title = "Congratulations! You don't have Osteoporosis";
       this.message.content =
-        "According to the data entered by you, the system has predicted that you do not have osteoporosis. You have a normal bone. But still here are some of things you can do every day through diet and exercise inorder to prevent osteoporosis in the future. ";
+        "According to the data entered by you, the system has predicted that you do not have osteoporosis. You have a normal bone. But still here are some of things you can do every day through diet and exercise inorder to prevent osteoporosis in the future. Your chances of having Osteoporosis are: " +
+        percentage * 100 +
+        "%";
     }
   }
 };
